@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 // 接続情報を設定
 const { MongoClient} = require("mongodb");
-const uri = "setuzokujyouhouwoireru";
+const uri = "setuzokujyouhouwoireru"; // cat.js稼働時はここを変更しないと動作しない。
 const client = new MongoClient(uri);
 
 router.get('/', async(req, res) => {
