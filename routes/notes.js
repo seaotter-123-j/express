@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 // 接続情報を設定
 const { MongoClient} = require("mongodb");
-const uri = "setuzokujyouhouwoireru"; // cat.js稼働時はここを変更しないと動作しない。
+const uri = "mongodb+srv://spheniscidaeworld:gdSbLQd2bndfgREjk9tu7y@cluster0.zyvm51k.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"; // cat.js稼働時はここを変更しないと動作しない。
 const client = new MongoClient(uri);
 
 router.get('/', async(req, res) => {
