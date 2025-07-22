@@ -10,6 +10,8 @@ var helloRouter = require('./routes/hello');
 var notesRouter = require('./routes/notes');
 var catRouter = require('./routes/cat');
 var qrcodeRouter = require('./routes/qrcode');
+var randomRouter = require('./routes/random');
+var dogRouter = require('./routes/dog');
 
 var app = express();
 
@@ -29,6 +31,8 @@ app.use('/hello', helloRouter);
 app.use('/notes', notesRouter);
 app.use('/cat', catRouter);
 app.use('/qrcode', qrcodeRouter);
+app.use('/random', randomRouter);
+app.use('/dog', dogRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
